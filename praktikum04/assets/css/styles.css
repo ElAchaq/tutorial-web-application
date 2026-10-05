@@ -1,0 +1,48 @@
+h1,
+h2,
+h3 {
+    color: darkblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+nav,
+aside {
+    background-color: #e8f0fe;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+thead , tfoot{
+    background-color: steelblue;
+    color: white;
+}
+
+
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+

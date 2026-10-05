@@ -1,0 +1,98 @@
+h1,
+h2,
+h3 {
+    color: darkblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+nav,
+aside {
+    background-color: #e8f0fe;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+thead , tfoot{
+    background-color: steelblue;
+    color: white;
+}
+
+
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 70px;
+}
+
+nav {
+    background: #e8f0fe;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+figure {
+    float: left;
+    margin-right: 20px;
+}
+
+section {
+    clear: both;
+}
+
+.detail-image {
+    float: right;
+    margin-left: 20px;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 15px;
+}

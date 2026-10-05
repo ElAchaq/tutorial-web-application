@@ -1,0 +1,90 @@
+input:invalid,
+textarea:invalid,
+select:invalid {
+    border-color: red;
+    background-color: #ffe6e6;
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+    border-color: green;
+}
+
+label:has(+ input[required])::after,
+label:has(+ textarea[required])::after,
+label:has(+ select[required])::after {
+    content: " (required field)";
+    color: red;
+}
+
+button {
+    background-color: steelblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+fieldset {
+    border: none;
+    border-top: 3px solid steelblue;
+    margin: 20px 0;
+    padding: 15px;
+}
+
+legend {
+    border-top: 2px solid steelblue;
+    border-bottom: 2px solid steelblue;
+    border-left: none;
+    border-right: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
+    border: none;
+    border-bottom: 2px solid gray;
+    padding: 6px;
+    margin: 6px 0;
+}
+
+input[required],
+textarea[required],
+select[required] {
+    border-left: 4px solid steelblue;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 70px;
+}
+
+nav {
+    background: #e8f0fe;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

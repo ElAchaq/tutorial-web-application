@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="logo">
+    <img src="assets/img/logo.png" alt="Tutorial App Logo" width="120">
+    <h1>Tutorial App</h1>
+</header>
+
+<nav>
+    <a href="list.html">Categories</a> |
+    <a href="tutorials.html">Tutorials</a> |
+    <a href="tutorial.html">Tutorial Details</a>
+    <a href="form.html">Add Tutorial</a>
+</nav>
+<form
+action="https://edu.inf.fh-dortmund.de/tutorialService/testCreateTutorial.php"
+method="post">
+<label>Title</label>
+
+<input
+type="text"
+name="name"
+required
+minlength="4"
+maxlength="20"
+pattern="[A-Z][A-Za-z ]*"
+placeholder="Java Basics">
+
+<br>
+
+<label>Language</label>
+
+<select
+name="language"
+required>
+
+<option value="">
+Choose...
+</option>
+
+<option value="de">
+German
+</option>
+
+<option value="en">
+English
+</option>
+
+<option value="es">
+Spanish
+</option>
+
+<option value="fr">
+French
+</option>
+
+</select>
+<br>
+
+<label>Categories</label>
+
+<input
+type="text"
+name="categories"
+required
+placeholder="Programming, Java"
+pattern="[^,]+(,\s*[^,]+)*">
+<br>
+<label>Description</label>
+<br>
+<textarea
+
+name="description"
+
+required
+
+minlength="40"
+
+placeholder="Write at least 40 characters...">
+
+</textarea>
+<br>
+<label>Duration</label>
+<br>
+<input
+
+type="text"
+
+name="duration"
+
+required
+
+placeholder="05:30"
+
+pattern="(0[0-9]|1[0-5]):([0-5][0-9])">
+<br>
+<label>Date</label>
+<br>
+<input
+type="date"
+name="date"
+required>
+
+<fieldset>
+
+<legend>Content Type</legend>
+
+<input
+type="radio"
+name="type"
+value="text"
+required>
+
+<label>Text Tutorial</label>
+
+<br>
+
+<input
+type="radio"
+name="type"
+value="video">
+
+<label>Video Tutorial</label>
+
+</fieldset>
+
+<input
+
+type="text"
+
+name="content"
+
+required
+
+placeholder="URL or YouTube embed code">
+<br>
+
+<button type="submit">
+Create Tutorial
+</button>
+
+</form>
+</body>
+</html>
+
